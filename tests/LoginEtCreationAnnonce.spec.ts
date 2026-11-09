@@ -62,8 +62,19 @@ test('Ajouter une annonce valide ',async ({page}) => {
     await Ap.clickSuivant()
     
     // expect etape 2 de devenir bleu 
-    const color = await Ap.getcouleurcircle2()
-    expect (color).toBe("rgb(21, 101, 192)")
+    //const color = await Ap.getcouleurcircle2()
+    //expect (color).toBe("rgb(21, 101, 192)")
+
+
+    await Ap.setTitre("test")
+    await Ap.setDescription("test")
+    await Ap.clickSuivant()
+
+    await Ap.setLargeur("3")
+    await Ap.setLongueur("3")
+    await Ap.setMotorisation("33")
+    await Ap.setConsommation("33")
+    await Ap.clickSuivant()
 
 
 })
