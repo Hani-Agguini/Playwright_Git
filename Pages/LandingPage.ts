@@ -19,7 +19,7 @@ async clickinscrire() {
 }
 
 async Clickseconnecter(){
-    await this.Elements.seconnecter().click
+    await this.Elements.seconnecter().nth(0).click()
 }
 
 
