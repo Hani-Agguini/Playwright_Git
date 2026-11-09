@@ -24,7 +24,7 @@ export class LoginPage {
     }
 
      async clickSouvienstoi() {
-        await this.Elements.souvenirdemoi().click()
+        await this.Elements.souvenirdemoi().check()
     }
 
      async clickseconnecter() {

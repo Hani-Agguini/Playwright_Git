@@ -1,6 +1,6 @@
 import { Page } from "@playwright/test"
 
-export class LandingPage {
+export class ExplorerPage {
 
     readonly page: Page
 
@@ -10,7 +10,12 @@ export class LandingPage {
 
 
 Elements = {
-    //inscrire: () => this.page.getByRole("span",).nth(0),
+    ajoutAnnonce: () => this.page.getByRole("button",{name:"Ajouter une annonce"}),
+
+}
+
+async clickAjoutAnnonce() {
+    await this.Elements.ajoutAnnonce().click()
 
 }
 
